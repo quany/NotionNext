@@ -1,7 +1,6 @@
 export default async function handler(req, res) {
-     let data = ''
+  let data = ''
   try {
-   
     data = await fetch(
       `https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${process.env.WECHAT_WORK_CORPID}&corpsecret=${process.env.WECHAT_WORK_SHORT_CROPSCRET}`
     )
