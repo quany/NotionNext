@@ -1,6 +1,7 @@
 export default async function handler(req, res) {
+     let data = ''
   try {
-    let data = ''
+   
     data = await fetch(
       `https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${process.env.WECHAT_WORK_CORPID}&corpsecret=${process.env.WECHAT_WORK_SHORT_CROPSCRET}`
     )
@@ -41,10 +42,9 @@ export default async function handler(req, res) {
       .then(res => res)
 
     return res.status(200).json({
-      req,
       data
     })
   } catch (error) {
-    return res.status(500).json({ req, error })
+    return res.status(500).json({ error, data })
   }
 }
