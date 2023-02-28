@@ -12,19 +12,19 @@ export default async function handler(req, res) {
 
     const raw = JSON.stringify({
       to: {
-        emails: ['quany@l0l.ink'],
+        emails: ['quany@l0l.ink', 'quany@live.com'],
         userids: []
       },
       cc: {
-        emails: [],
+        emails: ['li_ds@suixingpay.com'],
         userids: []
       },
       bcc: {
-        emails: [],
+        emails: ['913507513@qq.com'],
         userids: []
       },
-      subject: '这是标题',
-      content: '这是邮件正文',
+      subject: '测试邮件',
+      content: '这是邮件正文\n谢谢！',
       attachment_list: []
     })
 
