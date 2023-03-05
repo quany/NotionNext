@@ -14,7 +14,7 @@ const BLOG = {
   AUTHOR: 'iCoding', // 您的昵称 例如 tangly1024
   BIO: '爱码士', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://l0l.ink', // 网站地址
-  KEYWORDS: 'Notion, 博客, iCoding', // 网站关键词 英文逗号隔开
+  KEYWORDS: 'Notion, 博客, iCoding,ChatGPT,Open AI,短链接', // 网站关键词 英文逗号隔开
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
   CONTACT_EMAIL: 'quany@l0l.ink', // 邮箱地址 例如mail@tangly1024.com
   CONTACT_WEIBO: 'https://weibo.com/icodingquany', // 你的微博个人主页
