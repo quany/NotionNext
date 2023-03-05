@@ -11,13 +11,10 @@ import { useEffect } from 'react'
  */
 const NoFound = props => {
   // todo:查Redis有没有,转发链接
-
   useEffect(() => {
     window.location.href = `https://home.l0l.ink${window.location.pathname}`;
   });
-  
-  return (<></>);
-
+  return (<div>not Found<div/>);
   // const { theme, siteInfo } = useGlobal()
   // const ThemeComponents = ThemeMap[theme]
   // const meta = { title: `${props?.siteInfo?.title} | 页面找不到啦`, image: siteInfo?.pageCover }
