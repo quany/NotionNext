@@ -14,10 +14,6 @@ const NoFound = props => {
     window.location.href = `https://home.l0l.ink${window.location.pathname}`
   })
   return (<div>not Found<div/>)
-  // const { theme, siteInfo } = useGlobal()
-  // const ThemeComponents = ThemeMap[theme]
-  // const meta = { title: `${props?.siteInfo?.title} | 页面找不到啦`, image: siteInfo?.pageCover }
-  // return <ThemeComponents.Layout404 {...props} meta={meta}/>
 }
 
 export async function getStaticProps () {
