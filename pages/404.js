@@ -19,7 +19,6 @@
 //   return { props }
 // }
 
-// export default NoFound
 
 import { getGlobalNotionData } from '@/lib/notion/getNotionData'
 import { useEffect } from 'react'
